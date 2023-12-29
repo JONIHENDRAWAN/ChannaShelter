@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+/* INI BAGIAN NAVBAR */
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+   top: 0;
+   position: sticky;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 20px;
+   padding: 15px;
+   width: auto;
+   height: 80px;
+   background-color: #000000;
+   z-index: 1;
+}
+
+.brand {
+   display: flex;
+   flex-direction: row;
+   font-size: 1.5em;
+   padding: 15px;
+   text-transform: capitalize;
+   margin-left: 50px;
+}
+
+.firstname {
+   color: #f9f871;
+   font-weight: 700;
+}
+
+.lastname {
+   color: #ffffff;
+   font-weight: 400;
+   padding-left: 4px;
+}
+
+.navigation {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 50px;
+}
+
+.navigation > li {
+   list-style-type: none;
+   padding: 15px;
+}
+
+.li {
+   color: #ffffff;
+   font-size: 20px;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+.navigation > li > a:hover {
+   color: #f9f871;
+   transition: all 0.3s ease-in-out;
+}
+
+.active {
+   text-decoration: none;
+   text-transform: capitalize;
+   background-color: #f9f871;
+   color: #000000;
+   padding: 15px;
+   border-radius: 10%;
+   font-weight: 500;
+}
+
+.active:hover {
+   color: #ffffff !important;
+}
+
+/* HERO */
+.box {
+   background-color: #36454f;
+   height: auto;
+}
+.wrap1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 80px 0;
+}
+
+.wrap2 {
+   margin-left: 100px;
+   margin-right: 50px;
+}
+
+.contact {
+   background-color: #6f432a;
+   width: 70%;
+   height: 600px;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+}
+
+.title {
+   font-size: 50px;
+}
+
+.wrap2 p {
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.contact1 {
+   background-color: #f9f871;
+   width: 2%;
+   height: 600px;
+}
+
+.contact2 {
+   background-color: #000;
+   color: #fff;
+   width: 50%;
+   height: 500px;
+   display: flex;
+   align-items: center;
+}
+
+.wrap3 p {
+   text-align: center;
+   padding: 0 10px;
+}
+
+.wrap3 div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 10px;
+}
+
+.info {
+   margin-bottom: 50px;
+}
+
+.input {
+   background: transparent;
+   font-size: 25px;
+   border: none;
+   border-bottom: 1px solid #000;
+   border-radius: 0;
+   outline: none;
+   padding: 0;
+   height: 70px;
+   width: 90%;
+   color: #000;
+   font-weight: 500;
+}
+
+::placeholder {
+   color: white;
+   opacity: 0.7;
+}
+
+.btn {
+   margin-top: 5%;
+   width: 90%;
+   height: 50px;
+   font-size: 20px;
+   font-weight: 500;
+   background-color: #000;
+   color: white;
+   border: none;
+}
+
+/* GOOGLE MAP */
+
+.map {
+   width: 100%;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 80px;
+}
+
+.map iframe {
+   width: 72%;
+   height: 400px;
+}
+
+/* FOOTER */
+footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px;
+   width: auto;
+   background-color: #6f432a;
+}
+
+.contact-us {
+   margin-left: 50px;
+   margin-right: 50px;
+   color: #000000;
+   font-size: 28px;
+   font-weight: 500;
+   width: 400px;
+}
+
+.nama {
+   margin-right: 50px;
+   color: #000000;
+   font-size: 11px;
+}
+
+.icon {
+   margin-right: 750px;
+   display: flex;
+   gap: 20px;
+}
+
+a i {
+   font-size: xx-large;
+   color: #000000;
+}
+
+/* Responsive 1366px */
+@media screen and (max-width: 1366px) {
+   /* Footer */
+   .contact-us {
+      font-size: 25px;
+   }
+
+   .nama {
+      margin-right: 30px;
+   }
+
+   .icon {
+      margin-right: 650px;
+   }
+}
+
+/* Responsive 1280px */
+@media screen and (max-width: 1285px) {
+   /* Hero */
+   .title {
+      font-size: 40px;
+   }
+
+   .wrap2 p {
+      font-size: 20px;
+   }
+
+   .input {
+      font-size: 20px;
+   }
+
+   .wrap3 P {
+      font-size: 14px;
+   }
+
+   /* Footer */
+   .icon {
+      margin-right: 550px;
+   }
+}
+
+/* Responsive 1024px */
+@media screen and (max-width: 1050px) {
+   /* Hero */
+   .title {
+      font-size: 40px;
+   }
+
+   .wrap2 p {
+      font-size: 20px;
+   }
+
+   .input {
+      font-size: 20px;
+   }
+
+   .wrap3 p {
+      font-size: 14px;
+   }
+
+   /* Footer */
+   .icon {
+      margin-right: 350px;
+   }
+}
+
+/* Responsive 768px */
+@media screen and (max-width: 925px) {
+   /* Navbar */
+   .wrapper {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+      padding-bottom: 20px;
+   }
+
+   .brand {
+      margin-left: 0;
+      text-align: center;
+   }
+
+   .navigation {
+      margin-right: 0;
+      text-align: center;
+   }
+
+   .navigation > li {
+      padding: 10px;
+   }
+
+   .active {
+      font-size: 15px;
+      padding: 10px;
+      margin-top: 10px;
+   }
+
+   /* Hero */
+   .contact {
+      flex-direction: column;
+      justify-content: center;
+      height: 1000px;
+   }
+
+   .contact1 {
+      height: 1000px;
+   }
+
+   .title {
+      font-size: 35px;
+   }
+
+   form {
+      padding-bottom: 50px;
+   }
+
+   .contact2 {
+      height: 400px;
+   }
+
+   .wrap2 p {
+      font-size: 15px;
+   }
+
+   .input {
+      font-size: 15px;
+   }
+
+   .wrap3 p {
+      font-size: 12px;
+   }
+
+   /* Footer */
+   footer {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .contact-us {
+      margin: 0;
+      margin-bottom: 20px;
+   }
+
+   .nama {
+      margin-right: 0;
+   }
+
+   .icon {
+      margin-right: 0;
+      margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 590px) {
+   /* Hero */
+   .contact1 {
+      width: 20px;
+   }
+
+   .title {
+      font-size: 30px;
+   }
+
+   .wrap2 {
+      margin-left: 50px;
+      margin-right: 30px;
+   }
+
+   .wrap2 p {
+      font-size: 15px;
+   }
+
+   .input {
+      font-size: 15px;
+   }
+
+   .btn {
+      font-size: 15px;
+   }
+
+   .contact2 {
+      width: 200px;
+   }
+
+}
+
+/* Responsive 380px */
+@media screen and (max-width: 430px) {
+   /* Navbar */
+   .li {
+      font-size: 15px;
+   }
+
+   .active {
+      font-size: 15px;
+      display: flex;
+   }
+
+   /* Footer */
+   .contact-us {
+      font-size: 20px;
+      width: auto;
+   }
+}
+
+/* Responsive 330px */
+@media screen and (max-width: 330px) {
+   /* Navbar */
+   .li {
+      font-size: 12px;
+   }
+
+   .active {
+      font-size: 12px;
+   }
+   /* Hero */
+   .title {
+      font-size: 25px;
+   }
+
+   .wrap2 p {
+      font-size: 12px;
+   }
+
+   .input {
+      font-size: 12px;
+   }
+
+   .contact2 {
+      width: 170px;
+   }
+
+   .wrap3 p{
+      font-size: 10px;
+   }
+
+}

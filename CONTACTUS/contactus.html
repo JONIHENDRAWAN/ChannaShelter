@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="contactus.css">
+   <title>Channa Shalter</title>
+</head>
+
+<body>
+   <!-- NAVBAR -->
+   <nav class="wrapper">
+      <div class="brand">
+         <div class="firstname">channa</div>
+         <div class="lastname">shelter</div>
+      </div>
+      <ul class="navigation">
+         <li><a href="../HOME/index.html" class="li">home</a></li>
+         <li><a href="../HOME/index.html#about" class="li">about</a></li>
+         <li><a href="../HOME/index.html#articles" class="li">articles</a></li>
+         <li><a href="../CONTACTUS/contactus.html" class="active">contact us</a></li>
+      </ul>
+   </nav>
+
+   <!-- HERO -->
+   <div class="box">
+      <div class="wrap1">
+         <div class="contact">
+            <div class="wrap2">
+               <h1 class="title">Contact Us</h1><br>
+               <p>Feel free to contact us any time. We will get back to you as soon as we can!</p>
+               <br>
+               <form onsubmit="emailSend(); reset(); return false;">
+                  <input id="nama" type="text" placeholder="Name" class="input" required>
+                  <input id="email" type="email" placeholder="Email" class="input" required>
+                  <input id="pesan" type="text" placeholder="Message" class="input" required>
+                  <button type="submit" class="btn">Send</button>
+               </form>
+            </div>
+            <div class="contact2">
+               <div class="wrap3">
+                  <div>
+                     <i class="fa-regular fa-envelope"></i>
+                     <p>Email</p>
+                  </div>
+                  <p class="info">channashelter@gmail.com</p>
+                  <div>
+                     <i class="fa-solid fa-phone-volume"></i>
+                     <p>Phone</p>
+                  </div>
+                  <p class="info">+627338929375</p>
+                  <div>
+                     <i class="fa-solid fa-location-dot"></i>
+                     <p>Location</p>
+                  </div>
+                  <p class="info"> Jl. Surya Sumantri No.65, Sukawarna, Kec. Sukajadi, Kota Bandung, Jawa Barat 40164
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="contact1"></div>
+
+
+         <!-- GOOGLE MAP -->
+      </div>
+      <div class="map">
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.034315464586!2d107.5783414739971!3d-6.886493193112483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6873a8cf5a7%3A0xf8f474dec4efb56!2sUniversitas%20Kristen%20Maranatha!5e0!3m2!1sen!2sid!4v1703603930806!5m2!1sen!2sid"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+   </div>
+   <!-- FOOTER-->
+   <footer>
+      <p class="contact-us">Contact Us</p>
+      <div class="icon">
+         <a href="https://www.instagram.com/jonihwn">
+            <i class="fa-brands fa-instagram"></i></a>
+         <a href="https://wa.me/6281263756964">
+            <i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p class="nama">&copy; Copyright @2023 Channa Shelter by Joni Hendrawan</p>
+   </footer>
+
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script src="https://kit.fontawesome.com/1781b4baf7.js" crossorigin="anonymous"></script>
+   <script>
+      function emailSend() {
+         Email.send({
+            Host: 'smtp.elasticemail.com',
+            Username: '2272034@maranatha.ac.id',
+            Password: '95714F6DFE4DB966B8D01638BB6F0929F7ED',
+            To: '2272034@maranatha.ac.id',
+            From: '2272034@maranatha.ac.id',
+            Subject: 'You have a new message!',
+            Body:
+               'Halo Channa Shalter,<br><br>' +
+               document.getElementById('pesan').value +
+               '<br><br>From:' +
+               document.getElementById('nama').value +
+               '<br>' +
+               document.getElementById('email').value,
+         }).then(
+            message => alert("Terima kasih telah mengirim pesan!!")
+         );
+      }
+   </script>
+</body>
+
+</html>
